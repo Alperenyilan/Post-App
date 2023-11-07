@@ -1,5 +1,5 @@
 import { Input } from "antd";
-import { SearchOutlined } from "@ant-design/icons";
+import { SearchOutlined, HomeOutlined } from "@ant-design/icons";
 const Header = () => {
   return (
     <div className="border-b mb-6">
@@ -17,7 +17,32 @@ const Header = () => {
             className="rounded-full max-w-800"
           />
         </div>
-        <div className="menu-links">menu links</div>
+        <div className="menu-links flex justify-between items-center gap-10">
+          <a href="/" className=" menu-link flex flex-col">
+            <HomeOutlined className="md:text-2xl text-xl" />
+            <span className="md:text-xs text-[10px]">Home</span>
+          </a>
+          <a href="/" className=" menu-link flex flex-col">
+            <HomeOutlined className="md:text-2xl text-xl" />
+            <span className="md:text-xs text-[10px]">Home</span>
+          </a>
+          <a href="/" className=" menu-link flex flex-col">
+            <HomeOutlined className="md:text-2xl text-xl" />
+            <span className="md:text-xs text-[10px]">Home</span>
+          </a>
+          <a href="/" className=" menu-link flex flex-col">
+            <HomeOutlined className="md:text-2xl text-xl" />
+            <span className="md:text-xs text-[10px]">Home</span>
+          </a>
+          <a href="/" className=" menu-link flex flex-col">
+            <HomeOutlined className="md:text-2xl text-xl" />
+            <span className="md:text-xs text-[10px]">Home</span>
+          </a>
+          <a href="/" className=" menu-link flex flex-col">
+            <HomeOutlined className="md:text-2xl text-xl" />
+            <span className="md:text-xs text-[10px]">Home</span>
+          </a>
+        </div>
       </header>
     </div>
   );
