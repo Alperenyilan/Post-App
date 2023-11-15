@@ -28,9 +28,9 @@ const Header = () => {
         <div className="flex items-center justify-between gap-7 md-border-t-0 border-t md:px-0 px-4 py-1 md:static fixed bottom-0 md:w-auto w-screen md:bg-transparent left-0 bg-white  menu-links  ">
           <a
             href={"/"}
-            className="menu-link flex flex-col hover:text-[#40a9ff] transition-all"
+            className="menu-link flex flex-col hover:text-[#40a9ff]  transition-all"
           >
-            <HomeOutlined className="text-xl md:text-2xl" />
+            <HomeOutlined className="text-xl md:text-2xl  " />
             <span className="md:text-xs text-[10px]">Ana Sayfa</span>
           </a>
           <Badge count={5} offset={[0, 6]} className="md:flex hidden">
@@ -38,7 +38,7 @@ const Header = () => {
               href={"/"}
               className="menu-link  flex flex-col hover:text-[#40a9ff] transition-all"
             >
-              <ShoppingCartOutlined className="text-xl md:text-2xl" />
+              <ShoppingCartOutlined className="text-xl md:text-2xl  " />
               <span className="md:text-xs text-[10px]">Sepet</span>
             </a>
           </Badge>
