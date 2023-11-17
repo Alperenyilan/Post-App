@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import { Input, Badge } from "antd";
 import {
   SearchOutlined,
@@ -69,9 +70,10 @@ const Header = () => {
             className="menu-link flex flex-col hover:text-[#40a9ff] transition-all"
           >
             <LogoutOutlined className="text-xl md:text-2xl" />
-            <span className="md:text-xs text-[10px]">Ana Sayfa</span>
+            <span className="md:text-xs text-[10px]">Çıkış</span>
           </a>
         </div>
+        {/* //! BURADA EKRAN KÜCÜLDÜGÜNDE SAĞ TARAFTA SEPET GÖZÜKECEK */}
         <Badge count={5} offset={[0, 6]} className="md:hidden flex">
           <a
             href={"/"}
