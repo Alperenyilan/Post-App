@@ -14,7 +14,7 @@ function App() {
         <div className="products flex-[8]">
           <Products />
         </div>
-        <div className="cart-wrapper min-w-[300px] md:-mr-[24px] md:-mt-[24px]">
+        <div className="cart-wrapper min-w-[300px] md:-mr-[24px] md:-mt-[24px] border">
           <CartTotals />
         </div>
       </div>
