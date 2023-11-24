@@ -24,7 +24,7 @@ const CartTotals = () => {
               <span>12₺ x 2</span>
             </div>
           </div>
-          <div className="flex ml-2  items-center">
+          <div className="flex ml-2  items-center gap-x-1">
             <Button
               type="primary"
               size="middle"
