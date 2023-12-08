@@ -8,23 +8,23 @@ import {
 const CartTotals = () => {
   return (
     <div className="cart h-full max-h-[calc(100vh_-_90px)] flex flex-col">
-      <h2 className="bg-blue-600 text-center py-4 text-white font-bold tracking-wide">
+      <h2 className="py-4 font-bold tracking-wide text-center text-white bg-blue-600">
         Sepetteki Ürünler
       </h2>
-      <ul className="cart-items px-2 flex flex-col gap-y-3 pt-2">
-        <li className="cart-item flex justify-between">
+      <ul className="flex flex-col px-2 pt-2 cart-items gap-y-3">
+        <li className="flex justify-between cart-item">
           <div className="flex items-center">
             <img
               src="https://www.verita.com.tr/wp-content/uploads/2014/08/elma.jpg"
               alt=""
-              className="w-16 h-16 object-cover"
+              className="object-cover w-16 h-16"
             />
             <div className="flex flex-col ml-2">
               <b>Elma</b>
               <span>12₺ x 2</span>
             </div>
           </div>
-          <div className="flex ml-2  items-center gap-x-1">
+          <div className="flex items-center ml-2 gap-x-1">
             <Button
               type="primary"
               size="middle"
@@ -41,7 +41,7 @@ const CartTotals = () => {
           </div>
         </li>
       </ul>
-      <div className="cart-totals mt-auto">
+      <div className="mt-auto cart-totals">
         <div className="border-t border-b">
           <div className="flex justify-between p-2">
             <b>Ara Toplam</b>
@@ -52,20 +52,20 @@ const CartTotals = () => {
             <span className="text-red-700">+7.92₺</span>
           </div>
         </div>
-        <div className="border-b mt-4">
+        <div className="mt-4 border-b">
           <div className="flex justify-between p-2">
             <b className="text-xl text-green-500">Genel Toplam</b>
             <span className="text-xl">99₺</span>
           </div>
         </div>
-        <div className="py-4 px-2">
+        <div className="px-2 py-4">
           <Button type="primary" size="large" className="w-full">
             Sipariş Oluştur
           </Button>
           <Button
             type="primary"
             size="large"
-            className="w-full mt-2 flex items-center justify-center"
+            className="flex items-center justify-center w-full mt-2"
             icon={<ClearOutlined />}
             danger
           >
@@ -76,5 +76,4 @@ const CartTotals = () => {
     </div>
   );
 };
-
 export default CartTotals;
