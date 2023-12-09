@@ -38,6 +38,7 @@ const Header = () => {
             <a
               href={"/"}
               className="menu-link  flex flex-col hover:text-[#40a9ff] transition-all"
+              data-testid="mobile-cart-icon"
             >
               <ShoppingCartOutlined className="text-xl md:text-2xl  " />
               <span className="md:text-xs text-[10px]">Sepet</span>

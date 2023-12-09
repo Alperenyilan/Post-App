@@ -6,6 +6,13 @@ describe("CartTotals component", () => {
   // eslint-disable-next-line no-undef
   it("renders Cart component", () => {
     render(<CartTotals />);
+    const plusButton = screen.getByRole("button", { name: /plus/i }); // Find Plus button
+    const minusButton = screen.getByRole("button", { name: /minus/i }); // Find Minus button
+    const countElement = screen.getByText("1"); // Find element containing count
+
+    expect(plusButton).toBeInTheDocument();
+    expect(minusButton).toBeInTheDocument();
+    expect(countElement).toBeInTheDocument();
 
     // Sipariş Oluştur butonunun varlığını kontrol etme
     const createOrderButton = screen.getByText("Sipariş Oluştur");
